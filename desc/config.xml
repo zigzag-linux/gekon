@@ -28,7 +28,7 @@
         <user password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/root" name="root"/>
     </users>
     <users group="users">
-        <user password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/home/tux" name="tux"/>
+        <user password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/home/linux" name="linux"/>
     </users>
     <repository alias="oss" type="yast2" imageinclude="true" priority="99">
         <source path="opensuse://leap/42.2/repo/oss/"/>
