@@ -55,15 +55,16 @@
         <package name="mozilla-nss-certs"/>
         <package name="openSUSE-build-key"/>
         <package name="apparmor-utils"/>
+        <package name="apparmor-parser"/>
         <package name="apparmor-profiles"/>
-        <package name="pam_apparmor"/>
-        <package name="pam-modules"/>
+        <package name="bluez-firmware"/>
 
         <!-- CLI Essentials -->
         <package name="sudo"/>
         <package name="timezone"/>
         <package name="less"/>
         <package name="man"/>
+        <package name="hdparm"/>
         <package name="psmisc"/>
         <package name="the_silver_searcher"/>
         <package name="tree"/>
@@ -85,8 +86,10 @@
 
         <!-- Diagnostics -->
         <package name="sysfsutils"/>
+        <package name="schedtool"/>
         <package name="pciutils"/>
         <package name="usbutils"/>
+        <package name="powertop"/>
         <package name="smartmontools"/>
         <package name="iotop"/>
         <package name="inxi"/>
@@ -99,10 +102,17 @@
         <package name="fish"/>
         <package name="neovim"/>
 
+        <!-- Laptop Utils -->
+        <package name="thermald"/>
+        <package name="tlp"/>
+        <package name="tlp-rdw"/>
+
         <!-- Multimedia -->
         <package name="alsa-firmware"/>
         <package name="alsa-utils"/>
         <package name="pulseaudio"/>
+        <package name="pulseaudio-module-bluetooth"/>
+        <package name="pulseaudio-module-zeroconf"/>
         <package name="alsa-plugins-pulse"/>
         <package name="ffmpeg"/>
         <package name="youtube-dl"/>
@@ -113,13 +123,13 @@
         <package name="xfsprogs"/>
         <package name="btrfsprogs"/>
         <package name="ntfs-3g"/>
-        <package name="dosfstools"/>
         <package name="ntfsprogs"/>
+        <package name="dosfstools"/>
+        <package name="f2fs-tools"/>
 
         <!-- Archivers -->
-        <package name="rar"/>
         <package name="p7zip"/>
-        <package name="zip"/>
+        <package name="xar"/>
 
         <!-- Fonts -->
         <package name="xorg-x11-fonts"/>
@@ -130,6 +140,7 @@
 
         <!-- X.org -->
         <package name="x11-tools"/>
+        <package name="xrandr"/>
         <package name="xkeyboard-config"/>
         <package name="xorg-x11"/>
         <package name="xf86-input-libinput"/>
@@ -143,6 +154,7 @@
         <package name="plasma5-pk-updates"/>
         <package name="plasma-nm5"/>
         <package name="plasma-nm5-openvpn"/>
+        <package name="bluedevil5"/>
         <package name="systemsettings5"/>
         <package name="ksshaskpass5"/>
         <package name="kde-gtk-config5"/>
@@ -164,6 +176,7 @@
         <package name="dolphin-plugins"/>
         <package name="kamoso"/>
         <package name="ark"/>
+        <package name="kwrite"/>
 
         <!-- Apps -->
         <package name="google-chrome-stable"/>
