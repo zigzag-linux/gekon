@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<image schemaversion="6.2" name="gekon">
+    <description type="system">
+        <author>Maciej Krawiec</author>
+        <contact>maciek.krawiec@zoho.com</contact>
+        <specification>Gekon Linux</specification>
+    </description>
+    <preferences>
+        <type
+            image="iso"
+            primary="true"
+            bootloader="extlinux"
+            boot="isoboot/suse-13.2"
+            hybrid="true"
+            flags="overlay"
+            firmware="efi"
+            bootkernel="desktop"
+            kernelcmdline="quiet loglevel=3 vga=current"
+        />
+        <version>0.6.0</version>
+        <packagemanager>zypper</packagemanager>
+        <rpm-check-signatures>false</rpm-check-signatures>
+        <rpm-force>true</rpm-force>
+        <locale>pl_PL</locale>
+        <keytable>pl.map.gz</keytable>
+    </preferences>
+    <users group="root">
+        <user password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/root" name="root"/>
+    </users>
+    <users group="users">
+        <user password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/home/tux" name="tux"/>
+    </users>
+    <repository alias="oss" type="yast2" imageinclude="true" priority="99">
+        <source path="opensuse://leap/42.2/repo/oss/"/>
+    </repository>
+    <repository alias="packman" type="rpm-md" imageinclude="true" priority="98">
+        <source path="http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Leap_42.2/"/>
+    </repository>
+    <repository alias="google-chrome" type="rpm-md" imageinclude="true" priority="99">
+        <source path="http://dl.google.com/linux/chrome/rpm/stable/x86_64/"/>
+    </repository>
+    <repository alias="mkrwc" type="rpm-md" imageinclude="true" priority="97">
+        <source path="http://download.opensuse.org/repositories/home:/mkrwc/openSUSE_Leap_42.2/"/>
+    </repository>
+    <packages type="image">
+        <!-- Base Packages -->
+        <package name="kernel-default"/>
+        <package name="kernel-firmware"/>
+        <package name="memtest86+"/>
+
+        <!-- System -->
+        <package name="deltarpm"/>
+        <package name="rpmconf"/>
+        <package name="ca-certificates-mozilla"/>
+        <package name="mozilla-nss-certs"/>
+        <package name="openSUSE-build-key"/>
+        <package name="apparmor-utils"/>
+        <package name="apparmor-profiles"/>
+        <package name="pam_apparmor"/>
+        <package name="pam-modules"/>
+
+        <!-- CLI Essentials -->
+        <package name="sudo"/>
+        <package name="timezone"/>
+        <package name="less"/>
+        <package name="man"/>
+        <package name="psmisc"/>
+        <package name="the_silver_searcher"/>
+        <package name="tree"/>
+        <package name="colordiff"/>
+        <package name="lsof"/>
+        <package name="dos2unix"/>
+        <package name="patch"/>
+        <package name="openssh"/>
+        <package name="curl"/>
+
+        <!-- Network -->
+        <package name="iproute2"/>
+        <package name="iputils"/>
+        <package name="NetworkManager"/>
+        <package name="NetworkManager-openvpn"/>
+        <package name="SuSEfirewall2"/>
+        <package name="avahi-utils"/>
+        <package name="nss-mdns"/>
+
+        <!-- Diagnostics -->
+        <package name="sysfsutils"/>
+        <package name="pciutils"/>
+        <package name="usbutils"/>
+        <package name="smartmontools"/>
+        <package name="iotop"/>
+        <package name="inxi"/>
+        <package name="screenfetch"/>
+
+        <!-- CLI Utils -->
+        <package name="stow"/>
+        <package name="git"/>
+        <package name="tmux"/>
+        <package name="fish"/>
+        <package name="neovim"/>
+
+        <!-- Multimedia -->
+        <package name="alsa-firmware"/>
+        <package name="alsa-utils"/>
+        <package name="pulseaudio"/>
+        <package name="alsa-plugins-pulse"/>
+        <package name="ffmpeg"/>
+        <package name="youtube-dl"/>
+        <package name="livestreamer"/>
+        <package name="mpv"/>
+
+        <!-- Filesystems -->
+        <package name="xfsprogs"/>
+        <package name="btrfsprogs"/>
+        <package name="ntfs-3g"/>
+        <package name="dosfstools"/>
+        <package name="ntfsprogs"/>
+
+        <!-- Archivers -->
+        <package name="rar"/>
+        <package name="p7zip"/>
+        <package name="zip"/>
+
+        <!-- Fonts -->
+        <package name="xorg-x11-fonts"/>
+        <package name="liberation-fonts"/>
+        <package name="google-opensans-fonts"/>
+        <package name="dejavu-fonts"/>
+        <package name="fetchmsttfonts"/>
+
+        <!-- X.org -->
+        <package name="x11-tools"/>
+        <package name="xkeyboard-config"/>
+        <package name="xorg-x11"/>
+        <package name="xf86-input-libinput"/>
+        <package name="xorg-x11-driver-video"/>
+        <package name="xorg-x11-libX11-ccache"/>
+        <package name="xorg-x11-server"/>
+
+        <!-- Plasma 5 -->
+        <package name="sddm"/>
+        <package name="plasma5-session"/>
+        <package name="plasma5-pk-updates"/>
+        <package name="plasma-nm5"/>
+        <package name="plasma-nm5-openvpn"/>
+        <package name="systemsettings5"/>
+        <package name="ksshaskpass5"/>
+        <package name="kde-gtk-config5"/>
+        <package name="gtk2-metatheme-breeze"/>
+        <package name="gtk3-metatheme-breeze"/>
+
+        <!-- KDE Apps -->
+        <package name="kde-print-manager"/>
+        <package name="ksysguard5"/>
+        <package name="kcalc"/>
+        <package name="kinfocenter5"/>
+        <package name="spectacle"/>
+        <package name="kcolorchooser"/>
+        <package name="discover"/>
+        <package name="konsole"/>
+        <package name="gwenview5"/>
+        <package name="okular"/>
+        <package name="dolphin"/>
+        <package name="dolphin-plugins"/>
+        <package name="kamoso"/>
+        <package name="ark"/>
+
+        <!-- Apps -->
+        <package name="google-chrome-stable"/>
+        <package name="pinentry-qt4"/>
+        <package name="transmission-qt"/>
+        <package name="qtpass"/>
+        <package name="trojita"/>
+        <package name="rssguard"/>
+
+        <!-- YaST -->
+        <package name="yast2-control-center-qt"/>
+        <package name="libyui-qt7"/>
+        <package name="yast2-firewall"/>
+        <package name="yast2-fonts"/>
+        <package name="yast2-country"/>
+        <package name="yast2-users"/>
+        <package name="yast2-snapper"/>
+        <package name="yast2-live-installer"/>
+
+        <!-- Locale -->
+        <package name="desktop-translations"/>
+        <package name="kde-l10n-pl"/>
+        <package name="kde-l10n-pl-data"/>
+        <package name="yast2-trans-pl"/>
+        <package name="translation-update-pl"/>
+    </packages>
+    <packages type="bootstrap">
+        <package name="filesystem"/>
+        <package name="glibc-locale"/>
+        <package name="module-init-tools"/>
+    </packages>
+</image>
