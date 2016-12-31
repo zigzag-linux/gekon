@@ -10,7 +10,7 @@
             image="iso"
             primary="true"
             bootloader="extlinux"
-            boot="isoboot/suse-13.2"
+            boot="isoboot/suse-leap42.1"
             hybrid="true"
             flags="overlay"
             firmware="efi"
