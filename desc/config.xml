@@ -36,9 +36,6 @@
     <repository alias="repo-update" type="rpm-md" imageinclude="true" priority="99">
         <source path="http://download.opensuse.org/update/leap/42.2/oss/"/>
     </repository>
-    <repository alias="google-chrome" type="rpm-md" imageinclude="true" priority="99">
-        <source path="http://dl.google.com/linux/chrome/rpm/stable/x86_64/"/>
-    </repository>
     <repository alias="packman" type="rpm-md" imageinclude="true" priority="98">
         <source path="http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Leap_42.2/"/>
     </repository>
@@ -182,7 +179,8 @@
         <package name="kwrite"/>
 
         <!-- Apps -->
-        <package name="google-chrome-stable"/>
+        <package name="chromium"/>
+        <package name="chromium-ffmpegsumo"/>
         <package name="pinentry-qt4"/>
         <package name="transmission-qt"/>
         <package name="qtpass"/>
