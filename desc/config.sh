@@ -8,12 +8,20 @@ test -f /.profile && . /.profile
 # Greeting...
 echo "Configure image: [$kiwi_iname]..."
 
+# Mount filesystems
+baseMount
+
 # Setup baseproduct link
 suseSetupProduct
 
+# Add missing gpg keys to rpm database
+suseImportBuildKey
+
+# Set up default runlevel
+baseSetRunlevel 5
+
 # SuSEconfig
 suseConfig
-baseSetRunlevel 5
 
 baseUpdateSysConfig /etc/sysconfig/displaymanager DISPLAYMANAGER sddm
 baseUpdateSysConfig /etc/sysconfig/windowmanager DEFAULT_WM kde4
@@ -32,3 +40,9 @@ sed -i 's/leap\/.\{4\}/leap\/$releasever/g' /etc/zypp/repos.d/*.repo
 # Use NetworkManager to manage connections
 systemctl disable wicked
 systemctl enable NetworkManager
+
+# Unmount filesystems
+baseCleanMount
+
+exit 0
+
