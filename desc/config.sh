@@ -24,3 +24,7 @@ chown -R polkitd:polkitd /etc/polkit-1/rules.d/
 # Lock root user
 gpasswd -a linux wheel
 passwd -l root
+
+# Replace whatever version is hardcoded with $releasever
+sed -i 's/openSUSE_Leap_.\{4\}/openSUSE_Leap_$releasever/g' /etc/zypp/repos.d/*.repo
+sed -i 's/leap\/.\{4\}/leap\/$releasever/g' /etc/zypp/repos.d/*.repo
