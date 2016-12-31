@@ -29,6 +29,9 @@ baseUpdateSysConfig /etc/sysconfig/windowmanager DEFAULT_WM kde4
 # Fix permissions for polkit rules
 chown -R polkitd:polkitd /etc/polkit-1/rules.d/
 
+# Refresh all repos and accept gpg keys
+zypper --non-interactive --gpg-auto-import-keys refresh
+
 # Lock root user, make sure live user is in wheel
 gpasswd -a $(id -nu 1000) wheel
 passwd -l root
