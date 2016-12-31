@@ -180,7 +180,6 @@
 
         <!-- Apps -->
         <package name="chromium"/>
-        <package name="chromium-ffmpegsumo"/>
         <package name="pinentry-qt4"/>
         <package name="transmission-qt"/>
         <package name="qtpass"/>
