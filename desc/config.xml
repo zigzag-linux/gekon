@@ -13,7 +13,7 @@
             flags="overlay"
             hybrid="true"
             firmware="efi"
-            kernelcmdline="quiet loglevel=3 vga=current"
+            kernelcmdline="quiet loglevel=3 vga=current apparmor=0 security=''"
             hybridpersistent_filesystem="ext4"
             hybridpersistent="true"
         />
