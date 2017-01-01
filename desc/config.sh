@@ -48,6 +48,12 @@ passwd -l root
 sed -i 's/openSUSE_Leap_.\{4\}/openSUSE_Leap_$releasever/g' /etc/zypp/repos.d/*.repo
 sed -i 's/leap\/.\{4\}/leap\/$releasever/g' /etc/zypp/repos.d/*.repo
 
+# Enable additional services
+systemctl enable systemd-timesyncd
+systemctl enable SuSEfirewall2
+systemctl enable thermald
+systemctl enable tlp tlp-sleep
+
 # Use NetworkManager to manage connections
 systemctl disable wicked
 systemctl enable NetworkManager
