@@ -31,7 +31,7 @@ baseUpdateSysConfig /etc/sysconfig/windowmanager DEFAULT_WM kde4
 baseUpdateSysConfig /etc/sysconfig/fonts-config USE_LCDFILTER lcddefault
 baseUpdateSysConfig /etc/sysconfig/fonts-config USE_RGBA rgb
 baseUpdateSysConfig /etc/sysconfig/fonts-config FORCE_AUTOHINT yes
-baseUpdateSysConfig /etc/sysconfig/fonts-config FORCE_HINTSTYLE hintslight
+baseUpdateSysConfig /etc/sysconfig/fonts-config FORCE_HINTSTYLE hintmedium
 baseUpdateSysConfig /etc/sysconfig/fonts-config PREFER_SANS_FAMILIES "Open Sans"
 
 # Fix permissions for polkit rules
