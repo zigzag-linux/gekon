@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-declare -r DOCKER_TAG=gekon:0.1
+declare -r DOCKER_TAG=gekon:0.2
 
 container_build()
 {
@@ -17,7 +17,7 @@ container_run()
 
 gekon_build()
 {
-    container_run "kiwi --type iso -b /kiwi/desc/ -d /kiwi/out/"
+    container_run "kiwi-ng --type iso system build --description /kiwi/desc --target-dir /kiwi/out"
 }
 
 main()

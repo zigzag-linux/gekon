@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<image schemaversion="6.2" name="gekon">
+<image schemaversion="6.4" name="gekon">
     <description type="system">
         <author>Maciej Krawiec</author>
         <contact>maciek.krawiec@zoho.com</contact>
@@ -9,44 +9,45 @@
         <type
             image="iso"
             primary="true"
-            bootloader="extlinux"
-            boot="isoboot/suse-leap42.1"
-            hybrid="true"
+            boot="isoboot/suse-leap42.2"
             flags="overlay"
+            hybrid="true"
             firmware="efi"
-            bootkernel="desktop"
             kernelcmdline="quiet loglevel=3 vga=current"
+            hybridpersistent_filesystem="ext4"
+            hybridpersistent="true"
         />
-        <version>0.6.0</version>
+        <version>0.7.0</version>
         <packagemanager>zypper</packagemanager>
         <rpm-check-signatures>false</rpm-check-signatures>
         <rpm-force>true</rpm-force>
         <locale>pl_PL</locale>
         <keytable>pl.map.gz</keytable>
     </preferences>
-    <users group="root">
-        <user password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/root" name="root"/>
-    </users>
-    <users group="users">
-        <user password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/home/linux" name="linux"/>
+    <users>
+        <user password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/root" name="root" groups="root"/>
+        <user password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/home/linux" name="linux" groups="users,wheel"/>
     </users>
     <repository alias="repo-oss" type="yast2" imageinclude="true" priority="99">
-        <source path="opensuse://leap/42.2/repo/oss/"/>
+        <source path="obs://leap/42.2/repo/oss"/>
     </repository>
     <repository alias="repo-update" type="rpm-md" imageinclude="true" priority="99">
-        <source path="http://download.opensuse.org/update/leap/42.2/oss/"/>
+        <source path="http://download.opensuse.org/update/leap/42.2/oss"/>
     </repository>
     <repository alias="packman" type="rpm-md" imageinclude="true" priority="98">
-        <source path="http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Leap_42.2/"/>
+        <source path="http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Leap_42.2"/>
     </repository>
     <repository alias="mkrwc" type="rpm-md" imageinclude="true" priority="97">
-        <source path="http://download.opensuse.org/repositories/home:/mkrwc/openSUSE_Leap_42.2/"/>
+        <source path="obs://home:/mkrwc/openSUSE_Leap_42.2"/>
     </repository>
     <packages type="image">
         <!-- Base Packages -->
         <package name="kernel-default"/>
         <package name="kernel-firmware"/>
         <package name="memtest86+"/>
+        <package name="grub2"/>
+        <package name="grub2-x86_64-efi" arch="x86_64"/>
+        <package name="grub2-i386-pc"/>
 
         <!-- System -->
         <package name="deltarpm"/>
@@ -224,8 +225,11 @@
         <package name="translation-update-pl"/>
     </packages>
     <packages type="bootstrap">
+        <package name="udev"/>
         <package name="filesystem"/>
         <package name="glibc-locale"/>
-        <package name="module-init-tools"/>
+        <package name="cracklib-dict-full"/>
+        <package name="ca-certificates"/>
+        <package name="openSUSE-release"/>
     </packages>
 </image>

@@ -40,8 +40,7 @@ chown -R polkitd:polkitd /etc/polkit-1/rules.d/
 # Refresh all repos and accept gpg keys
 zypper --non-interactive --gpg-auto-import-keys refresh
 
-# Lock root user, make sure live user is in wheel
-gpasswd -a $(id -nu 1000) wheel
+# Lock root user
 passwd -l root
 
 # Replace whatever version is hardcoded with $releasever
