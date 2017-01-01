@@ -51,13 +51,18 @@
         <!-- System -->
         <package name="deltarpm"/>
         <package name="rpmconf"/>
+        <package name="bluez-firmware"/>
+        <package name="branding-upstream"/>
+        <package name="PackageKit-backend-zypp"/>
+        <package name="snapper-zypp-plugin"/>
+
+        <!-- Security -->
         <package name="ca-certificates-mozilla"/>
         <package name="mozilla-nss-certs"/>
         <package name="openSUSE-build-key"/>
         <package name="apparmor-utils"/>
         <package name="apparmor-parser"/>
         <package name="apparmor-profiles"/>
-        <package name="bluez-firmware"/>
 
         <!-- CLI Essentials -->
         <package name="sudo"/>
@@ -85,6 +90,9 @@
         <package name="nss-mdns"/>
 
         <!-- Diagnostics -->
+        <package name="sensors"/>
+        <package name="dmidecode"/>
+        <package name="hddtemp"/>
         <package name="sysfsutils"/>
         <package name="schedtool"/>
         <package name="pciutils"/>
@@ -101,6 +109,7 @@
         <package name="tmux"/>
         <package name="fish"/>
         <package name="neovim"/>
+        <package name="neovim-symlinks"/>
 
         <!-- Laptop Utils -->
         <package name="thermald"/>
@@ -141,23 +150,29 @@
         <!-- X.org -->
         <package name="x11-tools"/>
         <package name="xrandr"/>
+        <package name="xdpyinfo"/>
         <package name="xkeyboard-config"/>
         <package name="xorg-x11"/>
         <package name="xf86-input-libinput"/>
         <package name="xorg-x11-driver-video"/>
         <package name="xorg-x11-libX11-ccache"/>
         <package name="xorg-x11-server"/>
+        <package name="Mesa-demo-x"/>
 
         <!-- Plasma 5 -->
         <package name="sddm"/>
+        <package name="xdg-user-dirs"/>
         <package name="plasma5-session"/>
         <package name="plasma5-pk-updates"/>
+        <package name="plasma5-pa"/>
         <package name="plasma-nm5"/>
         <package name="plasma-nm5-openvpn"/>
         <package name="bluedevil5"/>
         <package name="systemsettings5"/>
         <package name="ksshaskpass5"/>
         <package name="kde-gtk-config5"/>
+        <package name="kio_iso"/>
+        <package name="kio_mtp"/>
         <package name="gtk2-metatheme-breeze"/>
         <package name="gtk3-metatheme-breeze"/>
 
@@ -168,7 +183,6 @@
         <package name="kinfocenter5"/>
         <package name="spectacle"/>
         <package name="kcolorchooser"/>
-        <package name="discover"/>
         <package name="konsole"/>
         <package name="gwenview5"/>
         <package name="okular"/>
@@ -189,10 +203,16 @@
         <!-- YaST -->
         <package name="yast2-control-center-qt"/>
         <package name="libyui-qt7"/>
+        <package name="libyui-qt-pkg7"/>
         <package name="yast2-firewall"/>
         <package name="yast2-fonts"/>
         <package name="yast2-country"/>
         <package name="yast2-users"/>
+        <package name="yast2-sudo"/>
+        <package name="yast2-online-update-frontend"/>
+        <package name="yast2-sound"/>
+        <package name="yast2-apparmor"/>
+        <package name="yast2-sysconfig"/>
         <package name="yast2-snapper"/>
         <package name="yast2-live-installer"/>
 

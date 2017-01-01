@@ -58,6 +58,9 @@ systemctl enable tlp tlp-sleep
 systemctl disable wicked
 systemctl enable NetworkManager
 
+# Setup Breeze theme for sddm
+sed -i -e 's/^Current=.*/Current=breeze/g' /etc/sddm.conf
+
 # Unmount filesystems
 baseCleanMount
 
