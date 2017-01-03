@@ -60,10 +60,7 @@
         <!-- Security -->
         <package name="ca-certificates-mozilla"/>
         <package name="mozilla-nss-certs"/>
-        <package name="openSUSE-build-key"/>
-        <package name="apparmor-utils"/>
-        <package name="apparmor-parser"/>
-        <package name="apparmor-profiles"/>
+        <package name="patterns-openSUSE-apparmor"/>
 
         <!-- CLI Essentials -->
         <package name="sudo"/>
@@ -78,7 +75,6 @@
         <package name="lsof"/>
         <package name="dos2unix"/>
         <package name="patch"/>
-        <package name="openssh"/>
         <package name="curl"/>
 
         <!-- Network -->
