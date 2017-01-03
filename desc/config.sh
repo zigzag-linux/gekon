@@ -40,6 +40,9 @@ chown -R polkitd:polkitd /etc/polkit-1/rules.d/
 # Refresh all repos and accept gpg keys
 zypper --non-interactive --gpg-auto-import-keys refresh
 
+# Build dynamic linker cache
+ldconfig
+
 # Lock root user
 passwd -l root
 
