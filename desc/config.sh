@@ -63,6 +63,9 @@ systemctl enable NetworkManager
 # Setup Breeze theme for sddm
 sed -i -e 's/^Current=.*/Current=breeze/g' /etc/sddm.conf
 
+# Fix theme inconsistencies when running gui with sudo
+echo 'XDG_CURRENT_DESKTOP=kde' >> /etc/environment
+
 # Unmount filesystems
 baseCleanMount
 
