@@ -124,6 +124,8 @@
         <package name="youtube-dl"/>
         <package name="livestreamer"/>
         <package name="mpv"/>
+        <package name="audacious"/>
+        <package name="audacious-plugins-extra"/>
 
         <!-- Filesystems -->
         <package name="xfsprogs"/>
@@ -142,6 +144,7 @@
         <package name="liberation-fonts"/>
         <package name="google-opensans-fonts"/>
         <package name="dejavu-fonts"/>
+        <package name="iosevka-fonts"/>
         <package name="fetchmsttfonts"/>
 
         <!-- X.org -->
@@ -159,6 +162,7 @@
         <!-- Plasma 5 -->
         <package name="sddm"/>
         <package name="xdg-user-dirs"/>
+        <package name="papirus-icon-theme"/>
         <package name="plasma5-session"/>
         <package name="plasma5-pk-updates"/>
         <package name="plasma5-pa"/>

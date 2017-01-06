@@ -33,6 +33,7 @@ baseUpdateSysConfig /etc/sysconfig/fonts-config USE_RGBA rgb
 baseUpdateSysConfig /etc/sysconfig/fonts-config FORCE_AUTOHINT yes
 baseUpdateSysConfig /etc/sysconfig/fonts-config FORCE_HINTSTYLE hintmedium
 baseUpdateSysConfig /etc/sysconfig/fonts-config PREFER_SANS_FAMILIES "Open Sans"
+baseUpdateSysConfig /etc/sysconfig/fonts-config PREFER_MONO_FAMILIES "Iosevka"
 
 # Fix permissions for polkit rules
 chown -R polkitd:polkitd /etc/polkit-1/rules.d/
