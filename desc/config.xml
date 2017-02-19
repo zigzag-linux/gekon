@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<image schemaversion="6.4" name="gekon">
+<image schemaversion="6.5" name="gekon">
     <description type="system">
         <author>Maciej Krawiec</author>
         <contact>maciek.krawiec@zoho.com</contact>
@@ -17,7 +17,7 @@
             hybridpersistent_filesystem="ext4"
             hybridpersistent="true"
         />
-        <version>0.7.0</version>
+        <version>0.8.0</version>
         <packagemanager>zypper</packagemanager>
         <rpm-check-signatures>false</rpm-check-signatures>
         <rpm-force>true</rpm-force>
@@ -49,180 +49,12 @@
         <package name="grub2-x86_64-efi" arch="x86_64"/>
         <package name="grub2-i386-pc"/>
 
-        <!-- System -->
-        <package name="deltarpm"/>
-        <package name="rpmconf"/>
-        <package name="bluez-firmware"/>
-        <package name="branding-upstream"/>
-        <package name="PackageKit-backend-zypp"/>
-        <package name="snapper-zypp-plugin"/>
-
-        <!-- Security -->
-        <package name="ca-certificates-mozilla"/>
-        <package name="mozilla-nss-certs"/>
-        <package name="patterns-openSUSE-apparmor"/>
-
-        <!-- CLI Essentials -->
-        <package name="sudo"/>
-        <package name="timezone"/>
-        <package name="less"/>
-        <package name="man"/>
-        <package name="hdparm"/>
-        <package name="psmisc"/>
-        <package name="the_silver_searcher"/>
-        <package name="tree"/>
-        <package name="colordiff"/>
-        <package name="lsof"/>
-        <package name="dos2unix"/>
-        <package name="patch"/>
-        <package name="curl"/>
-
-        <!-- Network -->
-        <package name="iproute2"/>
-        <package name="iputils"/>
-        <package name="NetworkManager"/>
-        <package name="NetworkManager-openvpn"/>
-        <package name="SuSEfirewall2"/>
-        <package name="avahi-utils"/>
-        <package name="nss-mdns"/>
-
-        <!-- Diagnostics -->
-        <package name="sensors"/>
-        <package name="dmidecode"/>
-        <package name="hddtemp"/>
-        <package name="sysfsutils"/>
-        <package name="schedtool"/>
-        <package name="pciutils"/>
-        <package name="usbutils"/>
-        <package name="powertop"/>
-        <package name="smartmontools"/>
-        <package name="iotop"/>
-        <package name="inxi"/>
-        <package name="screenfetch"/>
-
-        <!-- CLI Utils -->
-        <package name="stow"/>
-        <package name="git"/>
-        <package name="tmux"/>
-        <package name="fish"/>
-        <package name="neovim"/>
-        <package name="neovim-symlinks"/>
-
-        <!-- Laptop Utils -->
-        <package name="thermald"/>
-        <package name="tlp"/>
-        <package name="tlp-rdw"/>
-
-        <!-- Multimedia -->
-        <package name="alsa-firmware"/>
-        <package name="alsa-utils"/>
-        <package name="pulseaudio"/>
-        <package name="pulseaudio-module-bluetooth"/>
-        <package name="pulseaudio-module-zeroconf"/>
-        <package name="alsa-plugins-pulse"/>
-        <package name="ffmpeg"/>
-        <package name="youtube-dl"/>
-        <package name="livestreamer"/>
-        <package name="mpv"/>
-        <package name="audacious"/>
-        <package name="audacious-plugins-extra"/>
-
-        <!-- Filesystems -->
-        <package name="xfsprogs"/>
-        <package name="btrfsprogs"/>
-        <package name="ntfs-3g"/>
-        <package name="ntfsprogs"/>
-        <package name="dosfstools"/>
-        <package name="f2fs-tools"/>
-
-        <!-- Archivers -->
-        <package name="p7zip"/>
-        <package name="xar"/>
-
-        <!-- Fonts -->
-        <package name="xorg-x11-fonts"/>
-        <package name="liberation-fonts"/>
-        <package name="google-opensans-fonts"/>
-        <package name="dejavu-fonts"/>
-        <package name="iosevka-fonts"/>
-        <package name="fetchmsttfonts"/>
-
-        <!-- X.org -->
-        <package name="x11-tools"/>
-        <package name="xrandr"/>
-        <package name="xdpyinfo"/>
-        <package name="xkeyboard-config"/>
-        <package name="xorg-x11"/>
-        <package name="xf86-input-libinput"/>
-        <package name="xorg-x11-driver-video"/>
-        <package name="xorg-x11-libX11-ccache"/>
-        <package name="xorg-x11-server"/>
-        <package name="Mesa-demo-x"/>
-
-        <!-- Plasma 5 -->
-        <package name="sddm"/>
-        <package name="xdg-user-dirs"/>
-        <package name="papirus-icon-theme"/>
-        <package name="plasma5-session"/>
-        <package name="plasma5-pk-updates"/>
-        <package name="plasma5-pa"/>
-        <package name="plasma-nm5"/>
-        <package name="plasma-nm5-openvpn"/>
-        <package name="bluedevil5"/>
-        <package name="systemsettings5"/>
-        <package name="ksshaskpass5"/>
-        <package name="kde-gtk-config5"/>
-        <package name="kio_iso"/>
-        <package name="kio_mtp"/>
-        <package name="gtk2-metatheme-breeze"/>
-        <package name="gtk3-metatheme-breeze"/>
-
-        <!-- KDE Apps -->
-        <package name="kde-print-manager"/>
-        <package name="ksysguard5"/>
-        <package name="kcalc"/>
-        <package name="kinfocenter5"/>
-        <package name="spectacle"/>
-        <package name="kcolorchooser"/>
-        <package name="konsole"/>
-        <package name="gwenview5"/>
-        <package name="okular"/>
-        <package name="dolphin"/>
-        <package name="dolphin-plugins"/>
-        <package name="kamoso"/>
-        <package name="ark"/>
-        <package name="kwrite"/>
-
-        <!-- Apps -->
-        <package name="chromium"/>
-        <package name="pinentry-qt4"/>
-        <package name="transmission-qt"/>
-        <package name="qtpass"/>
-        <package name="trojita"/>
-        <package name="rssguard"/>
-
-        <!-- YaST -->
-        <package name="yast2-control-center-qt"/>
-        <package name="libyui-qt7"/>
-        <package name="libyui-qt-pkg7"/>
-        <package name="yast2-firewall"/>
-        <package name="yast2-fonts"/>
-        <package name="yast2-country"/>
-        <package name="yast2-users"/>
-        <package name="yast2-sudo"/>
-        <package name="yast2-online-update-frontend"/>
-        <package name="yast2-sound"/>
-        <package name="yast2-apparmor"/>
-        <package name="yast2-sysconfig"/>
-        <package name="yast2-snapper"/>
-        <package name="yast2-live-installer"/>
-
-        <!-- Locale -->
-        <package name="desktop-translations"/>
-        <package name="kde-l10n-pl"/>
-        <package name="kde-l10n-pl-data"/>
-        <package name="yast2-trans-pl"/>
-        <package name="translation-update-pl"/>
+        <namedCollection name="gekon_base"/>
+        <namedCollection name="gekon_drivers"/>
+        <namedCollection name="gekon_gui"/>
+        <namedCollection name="gekon_laptop"/>
+        <namedCollection name="gekon_kde"/>
+        <namedCollection name="gekon_yast"/>
     </packages>
     <packages type="bootstrap">
         <package name="udev"/>
