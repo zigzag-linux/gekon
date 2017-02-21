@@ -38,7 +38,7 @@
         <source path="http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Leap_42.2"/>
     </repository>
     <repository alias="mkrwc" type="rpm-md" imageinclude="true" priority="97">
-        <source path="obs://home:/mkrwc/openSUSE_Leap_42.2"/>
+        <source path="obs://home:/mkrwc:/gekon/openSUSE_Leap_42.2"/>
     </repository>
     <packages type="image">
         <!-- Base Packages -->
