@@ -23,10 +23,6 @@ baseSetRunlevel 5
 # SuSEconfig
 suseConfig
 
-# Configure desktop settings
-baseUpdateSysConfig /etc/sysconfig/displaymanager DISPLAYMANAGER sddm
-baseUpdateSysConfig /etc/sysconfig/windowmanager DEFAULT_WM kde4
-
 # Fix font rendering
 baseUpdateSysConfig /etc/sysconfig/fonts-config USE_LCDFILTER lcddefault
 baseUpdateSysConfig /etc/sysconfig/fonts-config USE_RGBA rgb
@@ -61,11 +57,10 @@ systemctl enable tlp tlp-sleep
 systemctl disable wicked
 systemctl enable NetworkManager
 
-# Setup Breeze theme for sddm
-sed -i -e 's/^Current=.*/Current=breeze/g' /etc/sddm.conf
-
-# Fix theme inconsistencies when running gui with sudo
-echo 'XDG_CURRENT_DESKTOP=kde' >> /etc/environment
+# Run profile-specific configuration
+source "/_profiles/${kiwi_profiles}.sh"
+setup_profile
+rm -fr /_profiles
 
 # Unmount filesystems
 baseCleanMount

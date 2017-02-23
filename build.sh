@@ -17,13 +17,15 @@ container_run()
 
 gekon_build()
 {
-    container_run "kiwi-ng --type iso system build --description /kiwi/desc --target-dir /kiwi/out"
+    container_run "kiwi-ng --profile $1 --type iso system build --description /kiwi/desc --target-dir /kiwi/out"
 }
 
 main()
 {
+    local profile=$1; shift
+
     container_build
-    gekon_build
+    gekon_build $profile
 }
 
 main $@

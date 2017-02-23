@@ -24,6 +24,9 @@
         <locale>pl_PL</locale>
         <keytable>pl.map.gz</keytable>
     </preferences>
+    <profiles>
+        <profile name="kde" description="KDE Plasma Desktop" import="true"/>
+    </profiles>
     <users>
         <user password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/root" name="root" groups="root"/>
         <user password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/home/linux" name="linux" groups="users,wheel"/>
@@ -53,8 +56,10 @@
         <namedCollection name="gekon_drivers"/>
         <namedCollection name="gekon_gui"/>
         <namedCollection name="gekon_laptop"/>
-        <namedCollection name="gekon_kde"/>
         <namedCollection name="gekon_yast"/>
+    </packages>
+    <packages type="image" profiles="kde">
+        <namedCollection name="gekon_kde"/>
     </packages>
     <packages type="bootstrap">
         <package name="udev"/>

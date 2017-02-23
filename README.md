@@ -14,7 +14,7 @@ Prebuilt Gekon images are available at Open Build Service [here]().
 
 The only requirement on the host system is Docker installed and configured without root permissions. The build script will take care of building the container image and installing any required dependencies inside container.
 
-### Processs
+### Process
 
 Clone the repo:
 
@@ -22,6 +22,6 @@ Clone the repo:
 
 Run build script:
 
-	./build.sh
+	./build.sh kde
 
 Resulting iso file will be located in the `out/` directory
