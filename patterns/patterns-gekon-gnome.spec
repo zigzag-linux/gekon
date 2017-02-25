@@ -21,6 +21,8 @@ Requires: gsettings-backend-dconf
 Requires: xdg-user-dirs-gtk
 Requires: gvfs-backend-afc
 Requires: gvfs-backend-samba
+Requires: gnome-keyring-pam
+Requires: pinentry-gtk2
 
 # GNOME Apps
 Requires: gnome-calculator

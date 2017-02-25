@@ -1,5 +1,5 @@
 Name:           patterns-gekon-drivers
-Version:        20170219
+Version:        20170225
 Release:        0
 Summary:        Drivers and firmware of Gekon
 License:        GPL-3.0
@@ -13,6 +13,7 @@ Requires: ucode-intel
 Requires: ucode-intel-blob
 Requires: ucode-amd
 
+Requires: crda
 Requires: b43legacy-firmware
 Requires: atmel-firmware
 Requires: atmel-firmware

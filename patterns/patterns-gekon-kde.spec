@@ -1,5 +1,5 @@
 Name:           patterns-gekon-kde
-Version:        20170219
+Version:        20170225
 Release:        0
 Summary:        KDE desktop of Gekon
 License:        GPL-3.0
@@ -11,7 +11,6 @@ Provides:       pattern-order() = 1140
 
 # Plasma 5
 Requires: sddm
-Requires: xdg-user-dirs
 Requires: papirus-icon-theme
 Requires: plasma5-session
 Requires: plasma5-pk-updates
@@ -52,6 +51,7 @@ Requires: trojita
 Requires: rssguard
 Requires: audacious
 Requires: audacious-plugins-extra
+Requires: mpv
 
 %description
 This package groups together all packages installed by default on KDE desktop

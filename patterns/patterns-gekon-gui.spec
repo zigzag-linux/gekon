@@ -1,5 +1,5 @@
 Name:           patterns-gekon-gui
-Version:        20170219
+Version:        20170225
 Release:        0
 Summary:        Basic graphical components of Gekon
 License:        GPL-3.0
@@ -20,6 +20,8 @@ Requires: xorg-x11-driver-video
 Requires: xorg-x11-libX11-ccache
 Requires: xorg-x11-server
 Requires: Mesa-demo-x
+Requires: xdg-user-dirs
+Requires: xdg-utils
 
 # Fonts
 Requires: xorg-x11-fonts
@@ -34,7 +36,6 @@ Requires: alsa-plugins-pulse
 Requires: ffmpeg
 Requires: youtube-dl
 Requires: livestreamer
-Requires: mpv
 
 %description
 This package provides basis for graphical environments of Gekon
