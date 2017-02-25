@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #======================================
 # General Stuff
 #--------------------------------------
@@ -58,8 +58,9 @@ systemctl disable wicked
 systemctl enable NetworkManager
 
 # Run profile-specific configuration
-source "/_profiles/${kiwi_profiles}.sh"
-setup_profile
+eval "/_profiles/${kiwi_profiles}_system.sh"
+su - linux -c "/_profiles/${kiwi_profiles}_user.sh"
+cp -a /home/linux/. /etc/skel
 rm -fr /_profiles
 
 # Unmount filesystems
