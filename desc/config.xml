@@ -26,6 +26,7 @@
     </preferences>
     <profiles>
         <profile name="kde" description="KDE Plasma Desktop" import="true"/>
+        <profile name="gnome" description="GNOME Desktop"/>
     </profiles>
     <users>
         <user password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/root" name="root" groups="root"/>
@@ -57,6 +58,9 @@
         <namedCollection name="gekon_gui"/>
         <namedCollection name="gekon_laptop"/>
         <namedCollection name="gekon_yast"/>
+    </packages>
+    <packages type="image" profiles="gnome">
+        <namedCollection name="gekon_gnome"/>
     </packages>
     <packages type="image" profiles="kde">
         <namedCollection name="gekon_kde"/>
