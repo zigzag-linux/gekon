@@ -59,7 +59,7 @@ systemctl enable NetworkManager
 
 # Run profile-specific configuration
 eval "/_profiles/${kiwi_profiles}_system.sh"
-su - linux -c "/_profiles/${kiwi_profiles}_user.sh"
+sudo -u linux dbus-launch --exit-with-session "/_profiles/${kiwi_profiles}_user.sh"
 cp -a /home/linux/. /etc/skel
 rm -fr /_profiles
 
