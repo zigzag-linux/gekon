@@ -1,5 +1,5 @@
 Name:           patterns-gekon-gui
-Version:        20170225
+Version:        20170226
 Release:        0
 Summary:        Basic graphical components of Gekon
 License:        GPL-3.0
@@ -32,10 +32,18 @@ Requires: iosevka-fonts
 Requires: fetchmsttfonts
 
 # Multimedia
-Requires: alsa-plugins-pulse
 Requires: ffmpeg
 Requires: youtube-dl
 Requires: livestreamer
+Requires: gstreamer-plugins-bad
+Requires: gstreamer-plugins-bad-orig-addon
+Requires: gstreamer-plugins-libav
+Requires: gstreamer-plugins-ugly
+Requires: gstreamer-plugins-ugly-orig-addon
+Requires: gstreamer-plugins-good
+Requires: gstreamer-plugins-good-extra
+Requires: gstreamer-plugins-vaapi
+Requires: libgstvdpau
 
 %description
 This package provides basis for graphical environments of Gekon

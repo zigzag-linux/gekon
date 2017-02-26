@@ -55,6 +55,9 @@ Requires: qtpass
 Requires: geary
 Requires: corebird
 Requires: gpick
+Requires: pragha
+Requires: pragha-plugins
+Requires: gnome-mpv
 
 %description
 This package groups all packages of GNOME installed by default on Gekon
