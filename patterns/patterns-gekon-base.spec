@@ -1,5 +1,5 @@
 Name:           patterns-gekon-base
-Version:        20170219
+Version:        20170226
 Release:        0
 Summary:        Base system of Gekon
 License:        GPL-3.0
@@ -17,6 +17,7 @@ Requires: branding-upstream
 Requires: PackageKit-backend-zypp
 Requires: snapper-zypp-plugin
 Requires: desktop-translations
+Requires: shim
 
 # Security
 Requires: ca-certificates-mozilla
@@ -78,6 +79,7 @@ Requires: pulseaudio-module-zeroconf
 Requires: alsa-plugins-pulse
 
 # Filesystems
+Requires: e2fsprogs
 Requires: xfsprogs
 Requires: btrfsprogs
 Requires: hfsutils
