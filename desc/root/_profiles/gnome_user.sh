@@ -3,8 +3,7 @@
 # Apearance
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,close'
-gsettings set org.gnome.desktop.wm.preferences theme 'Adwaita'
-gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita'
+gsettings set org.gnome.desktop.interface gtk-theme 'Arc-Darker'
 
 # Fonts
 gsettings set org.gnome.settings-daemon.plugins.xsettings hinting 'medium'

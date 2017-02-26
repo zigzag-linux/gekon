@@ -1,5 +1,5 @@
 Name:           patterns-gekon-gnome
-Version:        20170225
+Version:        20170226
 Release:        0
 Summary:        GNOME distribution of Gekon
 License:        GPL-3.0
@@ -12,7 +12,6 @@ Provides:       pattern-order() = 1140
 # GNOME Desktop
 Requires: gdm
 Requires: gnome-shell
-Requires: papirus-icon-theme
 Requires: gnome-control-center-goa
 Requires: gnome-control-center-color
 Requires: gnome-control-center-user-faces
@@ -21,8 +20,10 @@ Requires: gsettings-backend-dconf
 Requires: xdg-user-dirs-gtk
 Requires: gvfs-backend-afc
 Requires: gvfs-backend-samba
-Requires: gnome-keyring-pam
+Requires: libgnomesu-stub
 Requires: pinentry-gtk2
+Requires: papirus-icon-theme
+Requires: arc-theme
 
 # GNOME Apps
 Requires: gnome-calculator
