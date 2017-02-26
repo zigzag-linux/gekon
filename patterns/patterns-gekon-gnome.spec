@@ -15,6 +15,8 @@ Requires: gnome-shell
 Requires: gnome-control-center-goa
 Requires: gnome-control-center-color
 Requires: gnome-control-center-user-faces
+Requires: NetworkManager-gnome
+Requires: NetworkManager-openvpn-gnome
 Requires: polkit-gnome
 Requires: gsettings-backend-dconf
 Requires: xdg-user-dirs-gtk
