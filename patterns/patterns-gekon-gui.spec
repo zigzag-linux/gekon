@@ -1,5 +1,5 @@
 Name:           patterns-gekon-gui
-Version:        20170226
+Version:        20170228
 Release:        0
 Summary:        Basic graphical components of Gekon
 License:        GPL-3.0
@@ -16,16 +16,17 @@ Requires: xdpyinfo
 Requires: xkeyboard-config
 Requires: xorg-x11
 Requires: xf86-input-libinput
-Requires: xorg-x11-driver-video
 Requires: xorg-x11-libX11-ccache
 Requires: xorg-x11-server
 Requires: Mesa-demo-x
 Requires: xdg-user-dirs
 Requires: xdg-utils
+Requires: dbus-1-python3
 
 # Fonts
 Requires: xorg-x11-fonts
 Requires: liberation-fonts
+Requires: cantarell-fonts
 Requires: google-opensans-fonts
 Requires: dejavu-fonts
 Requires: iosevka-fonts
@@ -43,7 +44,10 @@ Requires: gstreamer-plugins-ugly-orig-addon
 Requires: gstreamer-plugins-good
 Requires: gstreamer-plugins-good-extra
 Requires: gstreamer-plugins-vaapi
+
 Requires: libgstvdpau
+Requires: Mesa-libva
+Requires: xvba-video
 
 %description
 This package provides basis for graphical environments of Gekon

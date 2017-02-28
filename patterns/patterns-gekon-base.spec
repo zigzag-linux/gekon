@@ -1,5 +1,5 @@
 Name:           patterns-gekon-base
-Version:        20170226
+Version:        20170228
 Release:        0
 Summary:        Base system of Gekon
 License:        GPL-3.0
@@ -18,11 +18,15 @@ Requires: PackageKit-backend-zypp
 Requires: snapper-zypp-plugin
 Requires: desktop-translations
 Requires: shim
+Requires: mdadm
+Requires: cryptsetup
 
 # Security
 Requires: ca-certificates-mozilla
 Requires: mozilla-nss-certs
 Requires: patterns-openSUSE-apparmor
+Requires: attr
+Requires: acl
 
 # CLI Essentials
 Requires: sudo
@@ -38,6 +42,7 @@ Requires: lsof
 Requires: dos2unix
 Requires: patch
 Requires: curl
+Requires: finger
 
 # Network
 Requires: iproute2
@@ -69,6 +74,7 @@ Requires: tmux
 Requires: fish
 Requires: neovim
 Requires: neovim-symlinks
+Requires: command-not-found
 
 # Multimedia
 Requires: alsa-firmware
