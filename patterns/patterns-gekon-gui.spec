@@ -18,10 +18,13 @@ Requires: xorg-x11
 Requires: xf86-input-libinput
 Requires: xorg-x11-libX11-ccache
 Requires: xorg-x11-server
-Requires: Mesa-demo-x
+Requires: dbus-1-python3
+
+# Dekstop utils
 Requires: xdg-user-dirs
 Requires: xdg-utils
-Requires: dbus-1-python3
+Requires: Mesa-demo-x
+Requires: update-desktop-files
 
 # Fonts
 Requires: xorg-x11-fonts

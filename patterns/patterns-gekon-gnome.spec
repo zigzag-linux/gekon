@@ -12,6 +12,7 @@ Provides:       pattern-order() = 1140
 # GNOME Desktop
 Requires: gdm
 Requires: gnome-shell
+Requires: gnome-shell-browser-plugin
 Requires: gnome-control-center-goa
 Requires: gnome-control-center-color
 Requires: gnome-control-center-user-faces
@@ -48,7 +49,8 @@ Requires: baobab
 Requires: file-roller
 Requires: evince
 Requires: nautilus
-Requires: nautilus-terminal
+Requires: nautilus-extension-terminal
+Requires: nautilus-file-roller
 Requires: gedit
 
 # Apps
