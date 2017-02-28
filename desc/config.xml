@@ -13,15 +13,15 @@
             flags="overlay"
             hybrid="true"
             firmware="efi"
-            kernelcmdline="quiet loglevel=3 vga=current apparmor=0 security=''"
+            kernelcmdline="quiet loglevel=3 vga=current"
             hybridpersistent="false"
         />
-        <version>0.9.0</version>
+        <version>0.10</version>
         <packagemanager>zypper</packagemanager>
         <rpm-check-signatures>false</rpm-check-signatures>
         <rpm-force>true</rpm-force>
-        <locale>pl_PL</locale>
-        <keytable>pl.map.gz</keytable>
+        <locale>en_US</locale>
+        <keytable>us.map.gz</keytable>
     </preferences>
     <profiles>
         <profile name="kde" description="KDE Plasma Desktop" import="true"/>
