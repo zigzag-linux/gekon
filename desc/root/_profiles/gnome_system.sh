@@ -12,3 +12,6 @@ change_config()
 # Configure desktop settings
 change_config /etc/sysconfig/displaymanager DISPLAYMANAGER '"gdm"'
 change_config /etc/sysconfig/windowmanager DEFAULT_WM '"gnome"'
+
+# Set default cursor theme
+change_config /usr/share/icons/default/index.theme Inherits 'Adwaita'

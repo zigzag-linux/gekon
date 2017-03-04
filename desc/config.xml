@@ -16,7 +16,7 @@
             kernelcmdline="quiet loglevel=3 vga=current"
             hybridpersistent="false"
         />
-        <version>0.10</version>
+        <version>0.11</version>
         <packagemanager>zypper</packagemanager>
         <rpm-check-signatures>false</rpm-check-signatures>
         <rpm-force>true</rpm-force>

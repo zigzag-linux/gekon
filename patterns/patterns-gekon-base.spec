@@ -1,5 +1,5 @@
 Name:           patterns-gekon-base
-Version:        20170228
+Version:        20170304
 Release:        0
 Summary:        Base system of Gekon
 License:        GPL-3.0
@@ -25,7 +25,7 @@ Requires: cryptsetup
 Requires: ca-certificates-mozilla
 Requires: mozilla-nss-certs
 Requires: patterns-openSUSE-apparmor
-Requires: attr
+Requires: libcap-progs
 Requires: acl
 
 # CLI Essentials
@@ -43,6 +43,7 @@ Requires: dos2unix
 Requires: patch
 Requires: curl
 Requires: finger
+Requires: bc
 
 # Network
 Requires: iproute2
@@ -51,7 +52,6 @@ Requires: NetworkManager
 Requires: NetworkManager-openvpn
 Requires: SuSEfirewall2
 Requires: avahi-utils
-Requires: nss-mdns
 
 # Diagnostics
 Requires: sensors
