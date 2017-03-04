@@ -1,5 +1,5 @@
 Name:           patterns-gekon-gnome
-Version:        20170228
+Version:        20170304
 Release:        0
 Summary:        GNOME distribution of Gekon
 License:        GPL-3.0
@@ -48,6 +48,8 @@ Requires: eog
 Requires: baobab
 Requires: file-roller
 Requires: evince
+Requires: evince-plugin-pdfdocument
+Requires: evince-plugin-djvudocument
 Requires: nautilus
 Requires: nautilus-extension-terminal
 Requires: nautilus-file-roller

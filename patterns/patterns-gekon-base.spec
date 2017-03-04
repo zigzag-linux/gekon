@@ -73,6 +73,7 @@ Requires: git
 Requires: tmux
 Requires: fish
 Requires: neovim
+Requires: python3-neovim
 Requires: neovim-symlinks
 Requires: command-not-found
 

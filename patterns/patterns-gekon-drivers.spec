@@ -1,5 +1,5 @@
 Name:           patterns-gekon-drivers
-Version:        20170228
+Version:        20170304
 Release:        0
 Summary:        Drivers and firmware of Gekon
 License:        GPL-3.0
@@ -9,22 +9,28 @@ Provides:       pattern() = gekon_drivers
 Provides:       pattern-icon() = yast-misc
 Provides:       pattern-order() = 1140
 
+# Microcode
 Requires: ucode-intel
 Requires: ucode-intel-blob
 Requires: ucode-amd
 
+# Network cards
 Requires: crda
 Requires: b43legacy-firmware
-Requires: atmel-firmware
 Requires: atmel-firmware
 Requires: bcm20702a1-firmware
 Requires: ipw-firmware
 Requires: zd1211-firmware
 
+# Graphics
 Requires: xorg-x11-driver-video
 Requires: xf86-video-intel
 Requires: xf86-video-amdgpu
 Requires: xf86-video-nouveau
+
+# Video acceleration
+Requires: vaapi-intel-driver
+Requires: xvba-video
 
 %description
 This package groups together the driver and firmware packages installed by default

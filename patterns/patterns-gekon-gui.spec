@@ -1,5 +1,5 @@
 Name:           patterns-gekon-gui
-Version:        20170228
+Version:        20170304
 Release:        0
 Summary:        Basic graphical components of Gekon
 License:        GPL-3.0
@@ -18,9 +18,9 @@ Requires: xorg-x11
 Requires: xf86-input-libinput
 Requires: xorg-x11-libX11-ccache
 Requires: xorg-x11-server
-Requires: dbus-1-python3
 
 # Dekstop utils
+Requires: xclip
 Requires: xdg-user-dirs
 Requires: xdg-utils
 Requires: Mesa-demo-x
@@ -48,9 +48,14 @@ Requires: gstreamer-plugins-good
 Requires: gstreamer-plugins-good-extra
 Requires: gstreamer-plugins-vaapi
 
+# Video acceleration
+Requires: vaapi-tools
 Requires: libgstvdpau
 Requires: Mesa-libva
-Requires: xvba-video
+Requires: libvdpau_va_gl1
+Requires: libva-vdpau-driver
+Requires: libva-egl1
+Requires: libva-glx1
 
 %description
 This package provides basis for graphical environments of Gekon
