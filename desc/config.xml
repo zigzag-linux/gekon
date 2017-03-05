@@ -12,11 +12,10 @@
             boot="isoboot/suse-leap42.2"
             flags="overlay"
             hybrid="true"
-            firmware="efi"
+            firmware="uefi"
             kernelcmdline="quiet loglevel=3 vga=current"
-            hybridpersistent="false"
-        />
-        <version>0.12</version>
+            />
+        <version>0.13</version>
         <packagemanager>zypper</packagemanager>
         <rpm-check-signatures>false</rpm-check-signatures>
         <rpm-force>true</rpm-force>
@@ -24,12 +23,12 @@
         <keytable>us.map.gz</keytable>
     </preferences>
     <profiles>
-        <profile name="kde" description="KDE Plasma Desktop" import="true"/>
-        <profile name="gnome" description="GNOME Desktop"/>
+        <profile name="kde" description="KDE Plasma Desktop"/>
+        <profile name="gnome" description="GNOME Desktop" import="true"/>
     </profiles>
     <users>
         <user password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/root" name="root" groups="root"/>
-        <user password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/home/linux" name="linux" shell="/usr/bin/fish" groups="users,wheel"/>
+        <user password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/home/linux" name="linux" shell="/usr/bin/fish" groups="users,wheel" id="2000"/>
     </users>
     <repository alias="repo-oss" type="yast2" imageinclude="true" priority="99">
         <source path="obs://leap/42.2/repo/oss"/>
@@ -65,11 +64,8 @@
         <namedCollection name="gekon_kde"/>
     </packages>
     <packages type="bootstrap">
-        <package name="udev"/>
         <package name="filesystem"/>
         <package name="glibc-locale"/>
-        <package name="cracklib-dict-full"/>
-        <package name="ca-certificates"/>
-        <package name="openSUSE-release"/>
+        <package name="module-init-tools"/>
     </packages>
 </image>
