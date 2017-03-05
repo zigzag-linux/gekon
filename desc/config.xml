@@ -16,7 +16,7 @@
             kernelcmdline="quiet loglevel=3 vga=current"
             hybridpersistent="false"
         />
-        <version>0.11</version>
+        <version>0.12</version>
         <packagemanager>zypper</packagemanager>
         <rpm-check-signatures>false</rpm-check-signatures>
         <rpm-force>true</rpm-force>
@@ -29,7 +29,7 @@
     </profiles>
     <users>
         <user password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/root" name="root" groups="root"/>
-        <user password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/home/linux" name="linux" groups="users,wheel"/>
+        <user password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/home/linux" name="linux" shell="/usr/bin/fish" groups="users,wheel"/>
     </users>
     <repository alias="repo-oss" type="yast2" imageinclude="true" priority="99">
         <source path="obs://leap/42.2/repo/oss"/>
