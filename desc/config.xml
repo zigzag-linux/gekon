@@ -12,7 +12,7 @@
             boot="isoboot/suse-leap42.2"
             flags="overlay"
             hybrid="true"
-            firmware="uefi"
+            firmware="efi"
             kernelcmdline="quiet loglevel=3 vga=current"
             />
         <version>0.13</version>
@@ -64,8 +64,11 @@
         <namedCollection name="gekon_kde"/>
     </packages>
     <packages type="bootstrap">
+        <package name="udev"/>
         <package name="filesystem"/>
         <package name="glibc-locale"/>
-        <package name="module-init-tools"/>
+        <package name="cracklib-dict-full"/>
+        <package name="ca-certificates"/>
+        <product name="openSUSE"/>
     </packages>
 </image>
