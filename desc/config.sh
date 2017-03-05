@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
-#======================================
-# General Stuff
-#--------------------------------------
-test -f /.kconfig && . /.kconfig
-test -f /.profile && . /.profile
+
+# Import common functions
+source /_profiles/utils.sh
 
 # Greeting...
 echo "Configure image: [$kiwi_iname]..."
@@ -37,9 +35,6 @@ chown -R polkitd:polkitd /etc/polkit-1/rules.d/
 # Refresh all repos and accept gpg keys
 zypper --non-interactive --gpg-auto-import-keys refresh
 
-# Build dynamic linker cache
-ldconfig
-
 # Lock root user
 passwd -l root
 
@@ -58,9 +53,9 @@ systemctl disable wicked
 systemctl enable NetworkManager
 
 # Run profile-specific configuration
-eval "/_profiles/${kiwi_profiles}_system.sh"
-sudo -u linux dbus-launch --exit-with-session "/_profiles/${kiwi_profiles}_user.sh"
-cp -a /home/linux/. /etc/skel
+conf_user_profile $kiwi_profiles
+
+# Remove configuration scripts
 rm -fr /_profiles
 
 # Unmount filesystems

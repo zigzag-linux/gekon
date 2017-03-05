@@ -1,17 +1,11 @@
 #!/usr/bin/env bash
 
-change_config()
-{
-    local path=$1; shift
-    local key=$1; shift
-    local value=$1; shift
-
-    sed -i -e "s/^${key}=.*/${key}=${value}/g" ${path}
-}
+# Import common functions
+source /_profiles/utils.sh
 
 # Configure desktop settings
-change_config /etc/sysconfig/displaymanager DISPLAYMANAGER '"sddm"'
-change_config /etc/sysconfig/windowmanager DEFAULT_WM '"kde4"'
+baseUpdateSysConfig /etc/sysconfig/displaymanager DISPLAYMANAGER sddm
+baseUpdateSysConfig /etc/sysconfig/windowmanager DEFAULT_WM kde4
 
 # Setup Breeze theme for sddm
 change_config /etc/sddm.conf Current 'breeze'
