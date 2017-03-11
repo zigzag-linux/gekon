@@ -17,6 +17,8 @@ Recommends: yast2-fonts
 Recommends: yast2-country
 Recommends: yast2-users
 Recommends: yast2-sudo
+Recommends: yast2-bootloader
+Recommends: yast2-update
 Recommends: yast2-online-update-frontend
 Recommends: yast2-sound
 Recommends: yast2-apparmor
