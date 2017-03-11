@@ -1,5 +1,5 @@
 Name:           patterns-gekon-yast
-Version:        20170219
+Version:        20170311
 Release:        0
 Summary:        YaST distribution of Gekon
 License:        GPL-3.0
@@ -9,20 +9,20 @@ Provides:       pattern() = gekon_yast
 Provides:       pattern-icon() = yast-misc
 Provides:       pattern-order() = 1140
 
-Requires: yast2-control-center-qt
+Recommends: yast2-control-center-qt
 Requires: libyui-qt7
 Requires: libyui-qt-pkg7
-Requires: yast2-firewall
-Requires: yast2-fonts
-Requires: yast2-country
-Requires: yast2-users
-Requires: yast2-sudo
-Requires: yast2-online-update-frontend
-Requires: yast2-sound
-Requires: yast2-apparmor
-Requires: yast2-sysconfig
-Requires: yast2-snapper
-Requires: yast2-live-installer
+Recommends: yast2-firewall
+Recommends: yast2-fonts
+Recommends: yast2-country
+Recommends: yast2-users
+Recommends: yast2-sudo
+Recommends: yast2-online-update-frontend
+Recommends: yast2-sound
+Recommends: yast2-apparmor
+Recommends: yast2-sysconfig
+Recommends: yast2-snapper
+Recommends: yast2-live-installer
 
 %description
 This package groups all packages of YaST installed by default on Gekon
