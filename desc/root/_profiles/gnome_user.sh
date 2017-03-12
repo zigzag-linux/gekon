@@ -13,6 +13,7 @@ change shell/favorite-apps "['chromium-browser.desktop', 'org.gnome.Nautilus.des
 change shell/overrides/dynamic-workspaces false
 change nautilus/icon-view/default-zoom-level "'standard'"
 change desktop/screensaver/lock-enabled true
+change desktop/screensaver/lock-delay "uint32 30"
 change desktop/peripherals/touchpad/tap-to-click true
 
 
@@ -54,9 +55,9 @@ change desktop/wm/keybindings/move-to-workspace-last "@as []"
 change desktop/wm/keybindings/move-to-workspace-3 "['<Shift><Super>numbersign']"
 change desktop/wm/keybindings/move-to-workspace-4 "['<Shift><Super>dollar']"
 change desktop/wm/keybindings/minimize "@as []"
-change desktop/wm/keybindings/switch-applications "@as []"
+change desktop/wm/keybindings/switch-applications "['<Alt>Tab']"
 change desktop/wm/keybindings/switch-panels-backward "['<Shift><Super>Tab']"
-change desktop/wm/keybindings/switch-applications-backward "@as []"
+change desktop/wm/keybindings/switch-applications-backward "['<Shift><Alt>Tab']"
 change desktop/wm/keybindings/move-to-monitor-down "['<Shift><Super>j']"
 change desktop/wm/keybindings/cycle-group "@as []"
 change desktop/wm/keybindings/activate-window-menu "['<Super>F3']"
@@ -94,7 +95,7 @@ change shell/extensions/topicons/icon-saturation 0.0
 
 
 # Terminal
-change terminal/legacy/schema-version/uint32 3
+change terminal/legacy/schema-version "uint32 3"
 change terminal/legacy/default-show-menubar false
 change terminal/legacy/profiles:/list "['$TERM_PROFILE']"
 change terminal/legacy/profiles:/:$TERM_PROFILE/foreground-color "'#c5c8c6'"
