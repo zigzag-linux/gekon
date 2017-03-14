@@ -13,7 +13,7 @@ Provides:       pattern-order() = 1140
 Requires: deltarpm
 Requires: rpmconf
 Requires: bluez-firmware
-Requires: branding-upstream
+Requires: branding-openSUSE
 Requires: PackageKit-backend-zypp
 Requires: snapper-zypp-plugin
 Requires: desktop-translations
