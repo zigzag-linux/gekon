@@ -1,5 +1,5 @@
 Name:           patterns-gekon-drivers
-Version:        20170304
+Version:        20170328
 Release:        0
 Summary:        Drivers and firmware of Gekon
 License:        GPL-3.0
@@ -24,7 +24,6 @@ Requires: zd1211-firmware
 
 # Graphics
 Requires: xorg-x11-driver-video
-Requires: xf86-video-intel
 Requires: xf86-video-amdgpu
 Requires: xf86-video-nouveau
 
