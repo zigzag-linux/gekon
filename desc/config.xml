@@ -6,15 +6,13 @@
         <specification>Gekon Linux</specification>
     </description>
     <preferences>
-        <type
-            image="iso"
+        <type image="iso"
             primary="true"
             boot="isoboot/suse-leap42.2"
             flags="overlay"
             hybrid="true"
             firmware="efi"
-            kernelcmdline="quiet loglevel=3 vga=current"
-            />
+            kernelcmdline="quiet loglevel=3 vga=current"/>
         <version>0.13</version>
         <packagemanager>zypper</packagemanager>
         <rpm-check-signatures>false</rpm-check-signatures>
