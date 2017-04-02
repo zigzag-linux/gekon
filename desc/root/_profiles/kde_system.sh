@@ -7,9 +7,6 @@ source /_profiles/utils.sh
 baseUpdateSysConfig /etc/sysconfig/displaymanager DISPLAYMANAGER sddm
 baseUpdateSysConfig /etc/sysconfig/windowmanager DEFAULT_WM kde4
 
-# Setup Breeze theme for sddm
-change_config /etc/sddm.conf Current 'breeze'
-
 # Set default cursor theme
 change_config /usr/share/icons/default/index.theme Inherits 'breeze_cursors'
 
