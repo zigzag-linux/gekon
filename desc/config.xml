@@ -13,7 +13,7 @@
             hybrid="true"
             firmware="efi"
             kernelcmdline="quiet loglevel=3 vga=current"/>
-        <version>0.13</version>
+        <version>0.14</version>
         <packagemanager>zypper</packagemanager>
         <rpm-check-signatures>false</rpm-check-signatures>
         <rpm-force>true</rpm-force>
@@ -40,7 +40,7 @@
     <repository alias="mkrwc" type="rpm-md" imageinclude="true" priority="97">
         <source path="obs://home:/mkrwc:/gekon/openSUSE_Leap_42.2"/>
     </repository>
-    <packages type="image" patternType="plusRecommended">
+    <packages type="image">
         <!-- Base Packages -->
         <package name="kernel-default"/>
         <package name="kernel-firmware"/>
@@ -54,6 +54,8 @@
         <namedCollection name="gekon_gui"/>
         <namedCollection name="gekon_laptop"/>
         <namedCollection name="gekon_yast"/>
+
+        <package name="yast2-live-installer" /><!-- installer should not be pattern dependency -->
     </packages>
     <packages type="image" profiles="gnome">
         <namedCollection name="gekon_gnome"/>
