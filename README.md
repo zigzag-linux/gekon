@@ -1,7 +1,9 @@
-# Gekon
+# :lizard:  Gekon
 
 ## About
-Gekon is a spin of latest stable release of openSUSE Leap, made possible by venerable [kiwi](https://suse.github.io/kiwi/) tool. It strives to provide better out of the box experience by choosing smaller and well-curated set of preinstalled software selection. This repo contains all source files needed to build Gekon images in different flavors.
+Gekon is a spin of latest stable release of openSUSE Leap, made possible by venerable [kiwi](https://suse.github.io/kiwi/) tool. It strives to provide better out of the box experience.
+
+This repo contains all source files needed to build Gekon images in different flavors.
 
 ## Differences with stock openSUSE
 * Targeted at software developers
