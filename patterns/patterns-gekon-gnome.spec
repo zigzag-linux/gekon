@@ -1,5 +1,5 @@
 Name:           patterns-gekon-gnome
-Version:        20170304
+Version:        20170426
 Release:        0
 Summary:        GNOME distribution of Gekon
 License:        GPL-3.0
@@ -26,6 +26,7 @@ Requires: gvfs-backend-afc
 Requires: gvfs-backend-samba
 Requires: libgnomesu-stub
 Requires: pinentry-gtk2
+Requires: openssh-askpass-gnome
 Requires: papirus-icon-theme
 Requires: arc-theme
 
