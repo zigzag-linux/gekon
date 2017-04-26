@@ -34,7 +34,6 @@ gekon_build()
     local param_type="--type ${1:-iso}"; shift
 
     container_run "kiwi-ng ${params_profiles} ${param_type} system build --description /kiwi/desc --target-dir /kiwi/out"
-    container_run "kiwi-ng ${params_profiles} ${param_type} system build --description /kiwi/desc --target-dir /kiwi/out"
 }
 
 main()
