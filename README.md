@@ -40,6 +40,7 @@ The resulting image file will be located in the `out/` directory.
 Build script takes two arguments, `profile` one of listed below and `type` - either `iso` (for live images) or `vmx` (for virtual machines)
 
 Available profile values:
+
 | Name     | Description                                                   |
 |----------|---------------------------------------------------------------|
 | `gnome`  | Gnome Shell powered desktop                                   |
