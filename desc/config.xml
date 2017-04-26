@@ -6,23 +6,33 @@
         <specification>Gekon Linux</specification>
     </description>
     <preferences>
-        <type image="iso"
-            primary="true"
-            boot="isoboot/suse-leap42.2"
-            flags="overlay"
-            hybrid="true"
-            firmware="efi"
-            kernelcmdline="quiet loglevel=3 vga=current"/>
-        <version>0.14</version>
+        <version>0.15</version>
         <packagemanager>zypper</packagemanager>
         <rpm-check-signatures>false</rpm-check-signatures>
         <rpm-force>true</rpm-force>
         <locale>en_US</locale>
         <keytable>us.map.gz</keytable>
+        <!-- liveusb -->
+        <type image="iso"
+            boot="isoboot/suse-leap42.2"
+            firmware="efi"
+            kernelcmdline="quiet"
+            primary="true"
+            flags="overlay"
+            hybrid="true"/>
+        <!-- virtualization -->
+        <type image="vmx"
+            boot="vmxboot/suse-leap42.2"
+            firmware="uefi"
+            kernelcmdline="quiet"
+            filesystem="ext3"
+            bootloader="grub2"
+            format="vmdk"/>
     </preferences>
     <profiles>
-        <profile name="kde" description="KDE Plasma Desktop"/>
-        <profile name="gnome" description="GNOME Desktop" import="true"/>
+        <profile name="base" description="Minimal install" import="true"/>
+        <profile name="plasma" description="Plasma desktop"/>
+        <profile name="gnome" description="GNOME desktop"/>
     </profiles>
     <users>
         <user password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/root" name="root" groups="root"/>
@@ -40,7 +50,7 @@
     <repository alias="mkrwc" type="rpm-md" imageinclude="true" priority="97">
         <source path="obs://home:/mkrwc:/gekon/openSUSE_Leap_42.2"/>
     </repository>
-    <packages type="image">
+    <packages type="image" profiles="base">
         <!-- Base Packages -->
         <package name="kernel-default"/>
         <package name="kernel-firmware"/>
@@ -60,7 +70,7 @@
     <packages type="image" profiles="gnome">
         <namedCollection name="gekon_gnome"/>
     </packages>
-    <packages type="image" profiles="kde">
+    <packages type="image" profiles="plasma">
         <namedCollection name="gekon_kde"/>
     </packages>
     <packages type="bootstrap">

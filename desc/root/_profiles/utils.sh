@@ -21,7 +21,7 @@ change_config()
 #--------------------------------------
 conf_user_profile()
 {
-    local profile=$1; shift
+    local profile=$(echo $1 | cut -d ',' -f 2); shift
 
     eval "/_profiles/${profile}_system.sh"
     sudo -u linux dbus-launch --exit-with-session "/_profiles/${profile}_user.sh"
