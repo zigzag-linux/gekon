@@ -20,17 +20,9 @@ container_run()
     docker run --privileged --rm -v $(pwd):/kiwi -it $DOCKER_TAG $command
 }
 
-parse_profile()
-{
-    case $1 in
-        plasma|gnome) echo "--profile base --profile $1";;
-        *) echo "--profile base";;
-    esac
-}
-
 gekon_build()
 {
-    local params_profiles=$(parse_profile $1); shift
+    local params_profiles="--profile ${1:-base}"; shift
     local param_type="--type ${1:-iso}"; shift
 
     container_run "kiwi-ng ${params_profiles} ${param_type} system build --description /kiwi/desc --target-dir /kiwi/out"

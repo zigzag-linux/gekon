@@ -50,7 +50,7 @@
     <repository alias="mkrwc" type="rpm-md" imageinclude="true" priority="97">
         <source path="obs://home:/mkrwc:/gekon/openSUSE_Leap_42.2"/>
     </repository>
-    <packages type="image" profiles="base">
+    <packages type="image" profiles="base,gnome,plasma">
         <!-- Base Packages -->
         <package name="kernel-default"/>
         <package name="kernel-firmware"/>
