@@ -1,4 +1,4 @@
-# :lizard:  Gekon
+# Gekon
 
 ## About
 Gekon is a spin of latest stable release of openSUSE Leap, made possible by venerable [kiwi](https://suse.github.io/kiwi/) tool. It strives to provide better out of the box experience.
