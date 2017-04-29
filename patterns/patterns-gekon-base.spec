@@ -1,5 +1,5 @@
 Name:           patterns-gekon-base
-Version:        20170314
+Version:        20170429
 Release:        0
 Summary:        Base system of Gekon
 License:        GPL-3.0
@@ -52,6 +52,7 @@ Requires: NetworkManager
 Requires: NetworkManager-openvpn
 Requires: SuSEfirewall2
 Requires: avahi-utils
+Requires: samba-client
 
 # Diagnostics
 Requires: sensors
