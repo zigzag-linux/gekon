@@ -1,5 +1,5 @@
 Name:           patterns-gekon-gui
-Version:        20170304
+Version:        20170430
 Release:        0
 Summary:        Basic graphical components of Gekon
 License:        GPL-3.0
@@ -34,6 +34,7 @@ Requires: google-opensans-fonts
 Requires: dejavu-fonts
 Requires: iosevka-fonts
 Requires: fetchmsttfonts
+Requires: gdouros-symbola-fonts
 
 # Multimedia
 Requires: ffmpeg
