@@ -98,6 +98,7 @@ Requires: f2fs-tools
 
 # Archivers
 Requires: p7zip
+Requires: rar
 Requires: xar
 
 %description
