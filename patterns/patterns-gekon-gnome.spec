@@ -1,5 +1,5 @@
 Name:           patterns-gekon-gnome
-Version:        20170426
+Version:        20170625
 Release:        0
 Summary:        GNOME distribution of Gekon
 License:        GPL-3.0
@@ -55,6 +55,7 @@ Requires: nautilus
 Requires: nautilus-extension-terminal
 Requires: nautilus-file-roller
 Requires: gedit
+Requires: cheese
 
 # Apps
 Requires: chromium

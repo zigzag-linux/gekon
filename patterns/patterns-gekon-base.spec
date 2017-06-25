@@ -1,5 +1,5 @@
 Name:           patterns-gekon-base
-Version:        20170429
+Version:        20170625
 Release:        0
 Summary:        Base system of Gekon
 License:        GPL-3.0
