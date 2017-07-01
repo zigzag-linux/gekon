@@ -32,8 +32,9 @@ baseUpdateSysConfig /etc/sysconfig/fonts-config PREFER_MONO_FAMILIES "Iosevka"
 # Fix permissions for polkit rules
 chown -R polkitd:polkitd /etc/polkit-1/rules.d/
 
-# Refresh all repos and accept gpg keys
+# Accept gpg keys and clean metadata
 zypper --non-interactive --gpg-auto-import-keys refresh
+zypper clean --all
 
 # Lock root user
 passwd -l root
