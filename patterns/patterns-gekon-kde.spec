@@ -1,5 +1,5 @@
 Name:           patterns-gekon-kde
-Version:        20170226
+Version:        20170701
 Release:        0
 Summary:        KDE desktop of Gekon
 License:        GPL-3.0
@@ -41,7 +41,6 @@ Requires: dolphin-plugins
 Requires: kamoso
 Requires: ark
 Requires: kwrite
-Requires: amarok
 
 # Apps
 Requires: chromium
@@ -50,7 +49,7 @@ Requires: transmission-qt
 Requires: qtpass
 Requires: trojita
 Requires: rssguard
-Requires: baka-mplayer
+Requires: mpv
 
 %description
 This package groups together all packages installed by default on KDE desktop

@@ -1,5 +1,5 @@
 Name:           patterns-gekon-gnome
-Version:        20170625
+Version:        20170701
 Release:        0
 Summary:        GNOME distribution of Gekon
 License:        GPL-3.0
@@ -64,9 +64,7 @@ Requires: qtpass
 Requires: geary
 Requires: corebird
 Requires: gpick
-Requires: pragha
-Requires: pragha-plugins
-Requires: gnome-mpv
+Requires: mpv
 
 %description
 This package groups all packages of GNOME installed by default on Gekon
