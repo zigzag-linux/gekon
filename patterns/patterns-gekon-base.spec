@@ -1,5 +1,5 @@
 Name:           patterns-gekon-base
-Version:        20170625
+Version:        20170701
 Release:        0
 Summary:        Base system of Gekon
 License:        GPL-3.0
@@ -17,9 +17,6 @@ Requires: branding-openSUSE
 Requires: PackageKit-backend-zypp
 Requires: snapper-zypp-plugin
 Requires: desktop-translations
-Requires: shim
-Requires: mdadm
-Requires: cryptsetup
 
 # Security
 Requires: ca-certificates-mozilla
@@ -27,6 +24,22 @@ Requires: mozilla-nss-certs
 Requires: patterns-openSUSE-apparmor
 Requires: libcap-progs
 Requires: acl
+
+# Disks
+Requires: shim
+Requires: lvm2
+Requires: mdadm
+Requires: cryptsetup
+
+# Filesystems
+Requires: e2fsprogs
+Requires: xfsprogs
+Requires: btrfsprogs
+Requires: hfsutils
+Requires: ntfs-3g
+Requires: ntfsprogs
+Requires: dosfstools
+Requires: f2fs-tools
 
 # CLI Essentials
 Requires: sudo
@@ -78,6 +91,11 @@ Requires: python3-neovim
 Requires: neovim-symlinks
 Requires: command-not-found
 
+# Archivers
+Requires: p7zip
+Requires: rar
+Requires: xar
+
 # Multimedia
 Requires: alsa-firmware
 Requires: alsa-utils
@@ -85,21 +103,6 @@ Requires: pulseaudio
 Requires: pulseaudio-module-bluetooth
 Requires: pulseaudio-module-zeroconf
 Requires: alsa-plugins-pulse
-
-# Filesystems
-Requires: e2fsprogs
-Requires: xfsprogs
-Requires: btrfsprogs
-Requires: hfsutils
-Requires: ntfs-3g
-Requires: ntfsprogs
-Requires: dosfstools
-Requires: f2fs-tools
-
-# Archivers
-Requires: p7zip
-Requires: rar
-Requires: xar
 
 %description
 This package groups together all the basic components of Gekon Linux
