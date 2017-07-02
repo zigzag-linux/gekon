@@ -1,5 +1,5 @@
 Name:           patterns-gekon-yast
-Version:        20170410
+Version:        20170102
 Release:        0
 Summary:        YaST distribution of Gekon
 License:        GPL-3.0
@@ -20,6 +20,7 @@ Requires: yast2-sudo
 Requires: yast2-bootloader
 Requires: yast2-update
 Requires: yast2-online-update-frontend
+Requires: yast2-ntp-client
 Requires: yast2-sound
 Requires: yast2-apparmor
 Requires: yast2-sysconfig
