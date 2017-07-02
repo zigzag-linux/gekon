@@ -6,22 +6,23 @@
         <specification>Gekon Linux</specification>
     </description>
     <preferences>
-        <version>0.16</version>
+        <version>0.17</version>
         <packagemanager>zypper</packagemanager>
         <rpm-check-signatures>false</rpm-check-signatures>
         <rpm-force>true</rpm-force>
         <locale>en_US</locale>
         <keytable>us.map.gz</keytable>
         <!-- liveusb -->
-        <type image="iso"
+        <type
+            image="iso"
             boot="isoboot/suse-leap42.2"
-            firmware="efi"
+            firmware="uefi"
             kernelcmdline="quiet"
-            primary="true"
             flags="overlay"
             hybrid="true"/>
         <!-- virtualization -->
-        <type image="vmx"
+        <type
+            image="vmx"
             boot="vmxboot/suse-leap42.2"
             firmware="uefi"
             kernelcmdline="quiet"
