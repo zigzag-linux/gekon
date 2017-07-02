@@ -1,5 +1,5 @@
 Name:           patterns-gekon-yast
-Version:        20170102
+Version:        20170702
 Release:        0
 Summary:        YaST distribution of Gekon
 License:        GPL-3.0
