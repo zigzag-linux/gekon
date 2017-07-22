@@ -1,5 +1,5 @@
 Name:           patterns-gekon-base
-Version:        20170701
+Version:        20170722
 Release:        0
 Summary:        Base system of Gekon
 License:        GPL-3.0
@@ -17,6 +17,7 @@ Requires: branding-openSUSE
 Requires: PackageKit-backend-zypp
 Requires: snapper-zypp-plugin
 Requires: desktop-translations
+Requires: flatpak
 
 # Security
 Requires: ca-certificates-mozilla

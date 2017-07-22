@@ -1,5 +1,5 @@
 Name:           patterns-gekon-gnome
-Version:        20170701
+Version:        20170722
 Release:        0
 Summary:        GNOME distribution of Gekon
 License:        GPL-3.0
@@ -9,7 +9,7 @@ Provides:       pattern() = gekon_gnome
 Provides:       pattern-icon() = gnome-misc
 Provides:       pattern-order() = 1140
 
-# GNOME Desktop
+# Desktop
 Requires: gdm
 Requires: gnome-shell
 Requires: chrome-gnome-shell
@@ -22,6 +22,7 @@ Requires: gnome-keyring-pam
 Requires: polkit-gnome
 Requires: gsettings-backend-dconf
 Requires: xdg-user-dirs-gtk
+Requires: xdg-desktop-portal-gtk
 Requires: gvfs-backend-afc
 Requires: gvfs-backend-samba
 Requires: libgnomesu-stub
