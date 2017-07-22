@@ -15,7 +15,7 @@
         <!-- liveusb -->
         <type
             image="iso"
-            boot="isoboot/suse-leap42.2"
+            boot="isoboot/suse-leap42.3"
             firmware="uefi"
             kernelcmdline="quiet"
             flags="overlay"
@@ -23,7 +23,7 @@
         <!-- virtualization -->
         <type
             image="vmx"
-            boot="vmxboot/suse-leap42.2"
+            boot="vmxboot/suse-leap42.3"
             firmware="uefi"
             kernelcmdline="quiet"
             filesystem="ext3"
@@ -40,16 +40,16 @@
         <user password="$1$wYJUgpM5$RXMMeASDc035eX.NbYWFl0" home="/home/linux" name="linux" shell="/usr/bin/fish" groups="users,wheel" id="2000"/>
     </users>
     <repository alias="repo-oss" type="yast2" imageinclude="true" priority="99">
-        <source path="obs://leap/42.2/repo/oss"/>
+        <source path="obs://leap/42.3/repo/oss"/>
     </repository>
     <repository alias="repo-update" type="rpm-md" imageinclude="true" priority="99">
-        <source path="http://download.opensuse.org/update/leap/42.2/oss"/>
+        <source path="http://download.opensuse.org/update/leap/42.3/oss"/>
     </repository>
     <repository alias="packman" type="rpm-md" imageinclude="true" priority="98">
-        <source path="http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Leap_42.2"/>
+        <source path="http://packman.inode.at/suse/openSUSE_Leap_42.3"/>
     </repository>
     <repository alias="mkrwc" type="rpm-md" imageinclude="true" priority="97">
-        <source path="obs://home:/mkrwc:/gekon/openSUSE_Leap_42.2"/>
+        <source path="obs://home:/mkrwc:/gekon/openSUSE_Leap_42.3"/>
     </repository>
     <packages type="image" profiles="base,gnome,plasma">
         <!-- Base Packages -->
