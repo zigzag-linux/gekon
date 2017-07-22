@@ -48,6 +48,7 @@ systemctl enable systemd-timesyncd
 systemctl enable SuSEfirewall2
 systemctl enable thermald
 systemctl enable tlp tlp-sleep
+systemctl enable rng-tools
 
 # Use NetworkManager to manage connections
 systemctl disable wicked

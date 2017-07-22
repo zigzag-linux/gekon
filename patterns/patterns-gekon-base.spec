@@ -18,6 +18,7 @@ Requires: PackageKit-backend-zypp
 Requires: snapper-zypp-plugin
 Requires: desktop-translations
 Requires: flatpak
+Requires: rng-tools
 
 # Security
 Requires: ca-certificates-mozilla
