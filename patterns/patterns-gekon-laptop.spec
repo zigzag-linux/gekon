@@ -1,5 +1,5 @@
 Name:           patterns-gekon-laptop
-Version:        20170219
+Version:        20170722
 Release:        0
 Summary:        Laptop-related packages of Gekon
 License:        GPL-3.0
@@ -12,6 +12,7 @@ Provides:       pattern-order() = 1140
 Requires: thermald
 Requires: tlp
 Requires: tlp-rdw
+Requires: powertop
 
 %description
 This package groups all packages related to laptops and netbooks

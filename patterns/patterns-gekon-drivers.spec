@@ -1,5 +1,5 @@
 Name:           patterns-gekon-drivers
-Version:        20170328
+Version:        20170723
 Release:        0
 Summary:        Drivers and firmware of Gekon
 License:        GPL-3.0
@@ -22,14 +22,8 @@ Requires: bcm20702a1-firmware
 Requires: ipw-firmware
 Requires: zd1211-firmware
 
-# Graphics
-Requires: xorg-x11-driver-video
-Requires: xf86-video-amdgpu
-Requires: xf86-video-nouveau
-
-# Video acceleration
-Requires: vaapi-intel-driver
-Requires: xvba-video
+# Bluetooth adapters
+Requires: bluez-firmware
 
 %description
 This package groups together the driver and firmware packages installed by default

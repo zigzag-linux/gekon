@@ -1,5 +1,5 @@
 Name:           patterns-gekon-kde
-Version:        20170722
+Version:        20170723
 Release:        0
 Summary:        KDE desktop of Gekon
 License:        GPL-3.0
@@ -11,7 +11,6 @@ Provides:       pattern-order() = 1140
 
 # Desktop
 Requires: sddm
-Requires: papirus-icon-theme
 Requires: plasma5-session
 Requires: plasma5-pk-updates
 Requires: plasma5-pa
@@ -19,12 +18,14 @@ Requires: plasma-nm5
 Requires: plasma-nm5-openvpn
 Requires: bluedevil5
 Requires: systemsettings5
+Requires: pinentry-qt4
 Requires: ksshaskpass5
 Requires: kde-gtk-config5
 Requires: kio_iso
 Requires: kio_mtp
 Requires: gtk2-metatheme-breeze
 Requires: gtk3-metatheme-breeze
+Requires: papirus-icon-theme
 Requires: xdg-desktop-portal-kde
 
 # KDE Apps
@@ -45,11 +46,9 @@ Requires: kwrite
 
 # Apps
 Requires: chromium
-Requires: pinentry-qt4
 Requires: transmission-qt
 Requires: qtpass
 Requires: trojita
-Requires: rssguard
 Requires: mpv
 
 %description

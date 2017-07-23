@@ -1,5 +1,5 @@
 Name:           patterns-gekon-gnome
-Version:        20170722
+Version:        20170723
 Release:        0
 Summary:        GNOME distribution of Gekon
 License:        GPL-3.0
@@ -11,8 +11,8 @@ Provides:       pattern-order() = 1140
 
 # Desktop
 Requires: gdm
+Requires: cantarell-fonts
 Requires: gnome-shell
-Requires: chrome-gnome-shell
 Requires: gnome-control-center-goa
 Requires: gnome-control-center-color
 Requires: gnome-control-center-user-faces
@@ -60,6 +60,7 @@ Requires: cheese
 
 # Apps
 Requires: chromium
+Requires: chrome-gnome-shell
 Requires: transmission-gtk
 Requires: qtpass
 Requires: geary
