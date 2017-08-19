@@ -18,11 +18,16 @@ change desktop/peripherals/touchpad/tap-to-click true
 
 
 # Appearance
-change shell/extensions/user-theme/name "'Arc-Dark'"
+change shell/extensions/user-theme/name "'Adapta-Nokto'"
 change desktop/interface/icon-theme "'Papirus-Dark'"
-change desktop/interface/gtk-theme "'Arc-Darker'"
-change desktop/interface/monospace-font-name "'Iosevka Term 12'"
+change desktop/interface/gtk-theme "'Adapta'"
 change desktop/wm/preferences/button-layout "'appmenu:minimize,close'"
+
+
+# Fonts
+change desktop/interface/font-name "'Noto Sans 11'"
+change desktop/wm/preferences/titlebar-font "'Noto Sans 11'"
+change desktop/interface/monospace-font-name "'Iosevka Term 12'"
 
 
 # Keyboard

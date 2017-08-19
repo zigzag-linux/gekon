@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<image schemaversion="6.6" name="gekon">
+<image schemaversion="6.7" name="gekon">
     <description type="system">
         <author>Maciej Krawiec</author>
         <contact>maciek.krawiec@zoho.com</contact>
         <specification>Gekon Linux</specification>
     </description>
     <preferences>
-        <version>0.17</version>
+        <version>0.18</version>
         <packagemanager>zypper</packagemanager>
         <rpm-check-signatures>false</rpm-check-signatures>
         <rpm-force>true</rpm-force>
